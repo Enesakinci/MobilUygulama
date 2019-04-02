@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ekle</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+	<ion-header no-border>
+		<ion-navbar hideBackButton="true" transparent>
+		</ion-navbar>
+	</ion-header>
+	<div padding>
+		<ion-row>
+			<ion-col>
+				<ion-list inset class="no-border">
+					<ion-item class="animate-in-primary">
+						<ion-input type="text" placeholder="İsim Soyisim" #isim></ion-input>
+					</ion-item>
+
+					<ion-item class="animate-in-primary">
+						<ion-input type="email" placeholder="Email" #email></ion-input>
+					</ion-item>
+
+					<ion-item class="animate-in-primary">
+						<ion-input type="text" placeholder="Durum" #durum></ion-input>
+					</ion-item>
+				</ion-list>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<button ion-button  (click)="Ekle()">Ekle</button>
+			</ion-col>
+		</ion-row>
+	</div>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Sil 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+    
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item *ngFor="let userdata of veri">{{userdata.isim}}     {{userdata.durum}}
+            <button ion-button  (click)="sil(userdata.id)">Sil</button>
+            <button ion-button  (click)="guncelle(userdata.id)">Güncelle</button>
+          </ion-item>
+          
+        </div>
+      </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-content>

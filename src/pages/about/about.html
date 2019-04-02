@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Yazdır !
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list>
+    <ion-item>İsim      Durum </ion-item>
+    <ion-item *ngFor="let userdata of veri">{{userdata.isim}}     {{userdata.durum}}</ion-item>
+    
+</ion-list>
+  
+</ion-content>
